@@ -1,30 +1,54 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
-const allProjects = await Astro.glob('../pages/projects/*.md');
-const allContributions = await Astro.glob('../pages/contributions/*.md');
 const pageTitle = "Works";
 ---
 <Layout pageTitle={pageTitle}>
     <div class="gif">
         <img width="300" height="259" alt="RaccoonLaptopGif" src="/laptop.webp"/>
     </div>
-    <h2>Contributions</h2>
+    <h2>Artwork</h2>
     <ul role="list" class="link-card-grid">
-        {allContributions.map((card) => <Card 
-            url={card.url} 
-            image={card.frontmatter.image.url} 
-            title={card.frontmatter.title} 
-            body={card.frontmatter.description}
-        />)}
+        <Card
+            href="/works/digital_drawings"
+            image="/GitHub.webp"
+            title="Digital Drawing"
+            body="Vector based drawings"
+        />
+        <Card
+            href="https://github.com/"
+            image="/conetemp.jpg"
+            title="Pixel Art"
+            body="Pixel based drawings"
+        />
+        <Card
+            href="https://github.com/"
+            image="/yellow.png"
+            title="Photo Collages"
+            body="Found photo digital collages"
+        />
+
+         <Card
+            href="https://github.com/"
+            image="/cheese_mold.png"
+            title="Other Works"
+            body="Traditional art and other pieces"
+        />
     </ul>
-    <h2>Projects</h2>
+    <h2>Youtube</h2>
     <ul role="list" class="link-card-grid">
-        {allProjects.map((card) => <Card 
-            url={card.url} 
-            image={card.frontmatter.image.url} 
-            title={card.frontmatter.title} 
-            body={card.frontmatter.description}
-        />)}
+        <Card
+            href="https://youtu.be/TThyWocTv48?si=FBMfKAoawmclCZ6g"
+            image="/youtube.png"
+            title="Remix Project"
+            body="ARTD 251 Fall 2022"
+        />
+        
+        <Card
+            href="https://youtu.be/lGshdWuLWHg?si=nmShFMKnwnABkuCm"
+            image="/youtube.png"
+            title="Stop Motion Project"
+            body="ARTD 251 Fall 2022"
+        />
     </ul>
 </Layout>

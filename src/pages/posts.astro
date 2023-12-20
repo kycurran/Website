@@ -1,52 +1,93 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
-const pageTitle = "Posts";
+const pageTitle = "Resume";
 ---
 <Layout pageTitle={pageTitle}>
     <div class="gif">
         <img width="300" height="259" alt="RaccoonLaptopGif" src="/blog.webp"/>
     </div>
-    <h2>Blog</h2>
-    <ul role="list" class="link-card-grid">
-        <Card
-            url="https://medium.com/"
-            image="/blog.png"
-            title="Blog 1"
-            body="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci"
-        />
-        <Card
-            url="https://medium.com/"
-            image="/blog.png"
-            title="Blog 2"
-            body="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci"
-        />
-        <Card
-            url="https://medium.com/"
-            image="/blog.png"
-            title="Blog 3"
-            body="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci"
-        />
-        <Card
-            url="https://medium.com/"
-            image="/blog.png"
-            title="Blog 4"
-            body="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci"
-        />
+    <h2>Experience</h2>
+    <ul>
+        <li>Dairy Queen | January 2022 - April 24, 2022 | Kitchen Staff </li>
+        <ul> 
+        <li>Preparing food</li>
+        <li>Restocking</li>
+        <li>Cleaning</li>
+        <li>Communicating well with coworkers</li>
+        <li>Closing Responsibilities</li>
+        </ul>
     </ul>
-    <h2>YouTube</h2>
-    <ul role="list" class="link-card-grid">
-        <Card
-            url="https://www.youtube.com/"
-            image="/youtube.png"
-            title="Video 1"
-            body="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci"
-        />
-        <Card
-            url="https://www.youtube.com/"
-            image="/youtube.png"
-            title="Video 2"
-            body="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci"
-        />
+    <ul>
+        <li>Knight Campus | June 2022 - Current | Executive Office Student Assistant</li>
+        <ul>
+        <li>Managing a front desk</li>
+        <li>Cleaning and organizing spaces</li>
+        <li>Maintaining inventory items</li>
+        <li>Communicating with staff, students, and visitors</li>
+        <li>Supporting events</li>
+        <li>Leading tours</li>
+        <li>Training new members</li>
+        <li>Various miscellaneous tasks</li>
+        </ul>
+    </ul>
+    <ul>
+        <li>Information Security Office | August 2023 - Current | Student Security Analyst</li>
+        <ul>
+        <li>Communicating well with internal and external members</li>
+        <li>Learning a large variety of tools and software</li>
+        <li>Training new members</li>
+        <li>Working with cyber security tools and data</li>
+        <li>Requirs high attention to detail and critical thinking</li>
+        <li>Creating and managing communication templates in confluence</li>
+        <li>Organization among a high inflow of tasks</li>
+        </ul>
+    </ul>
+
+    <h2>Education</h2>
+    <ul>
+    <li>North Eugene High School | Eugene, OR</li>
+    <ul><li> Class of 2022</li>
+    <li>3.98 GPA</li>
+    <li>Honors</li>
+    </ul>
+    <li>University of Oregon | Eugene, OR</li>
+        <ul>
+            <li>Class of 2025</li>
+            <li>3.6 GPA</li>
+        </ul>
+    </ul>
+
+    <h2>Volunteer Work</h2>
+    <ul>
+        <li>Hope and Safety Alliance | gift wrapping at the holiday market</li>
+        <li>North Eugene Highschool Volleyball | Fight Like Nancy 5k run</li>
+        <li>University of Oregon’s Division of Equity and Inclusion | Asian Celebration wishing tree booth</li>
+    </ul>
+
+    <h2>Skills</h2>
+    <ul>
+        <li>Adobe Products</li>
+        <ul>
+             <li>Illustrator</li>
+             <li>Photoshop</li> 
+             <li>Lightroom</li>
+             <li>Premiere Pro</li>
+             <li>Acrobate </li>
+             </ul>
+        <li>Office Tools</li>
+        <ul>
+            <li>Confluence</li>
+            <li>Google Suite</li>
+            <li>Microsoft Suite</li>
+        </ul>
+        <li>Cyber Security Tools</li>
+        <ul>
+        <li>Elastic</li>
+        <li>ProofPoint</li>
+        <li>Azure</li>
+        <li>Linux</li>
+        </ul>
+        <li>Moderate Spanish</li>
     </ul>
 </Layout>

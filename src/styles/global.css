@@ -45,6 +45,11 @@ p {
     text-align: center;
 }
 
+.gif img {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
 /* Navigation Bar */
 .nav-bar {
     display: grid;
@@ -75,37 +80,7 @@ p {
 }
 
 .nav-links a {
-    margin: 0 10px;
-}
-
-/* Footer */
-.foot-btn {
-    display: flex;
-    padding: 10px;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    border: 2px solid #fdebf3;
-}
-
-.foot-btn:hover {
-    border-color: #78c2ad;
-}
-
-.light .foot-btn {
-    border: 2px solid #1e1e2e;
-}
-
-.git-icon {
-    content: url("/github-mark-white.svg");
-}
-
-.mail-icon {
-    content: url("/mail-white.svg");
-}
-
-.linked-in {
-    content: url("/li-in-white.png");
+    margin: 0 13px;
 }
 
 /* Card listing */
@@ -114,6 +89,13 @@ p {
     grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
     gap: 1rem;
     padding: 0;
+}
+
+.link-card-grid img {
+    max-width: 100%; /* Make the image responsive within the card */
+    max-height: 150px; /* Set a maximum height for the image */
+    width: auto; /* Ensure the width is responsive */
+    height: auto; /* Maintain the aspect ratio */
 }
 
 /* Theme Icon */
@@ -142,28 +124,12 @@ html.light {
     color: #1e1e2e; 
 }
 
-.light .button {
+.light button {
     color: #1e1e2e;
 }
 
-.light .button:hover {
+.light button:hover {
     color: #fdebf3;
-}
-
-.light .foot-btn:hover {
-	border-color: #78c2ad;
-}
-
-.light .git-icon {
-    content: url("/github-mark.svg");
-}
-
-.light .mail-icon {
-    content: url("/mail.svg");
-}
-
-.light .linked-in {
-    content: url("/li-in.png");
 }
 
 /* Media Query */
